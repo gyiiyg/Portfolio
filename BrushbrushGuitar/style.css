@@ -1,0 +1,418 @@
+colorrrrr {
+    color: #EBE0D4;
+    color: #ECBB92;
+    color: #D37B50;
+    color: #A95B46;
+    color: #60665A;
+    color: #859272;
+    color: #F7EFE5;
+}
+
+/* 字型 */
+.lxgw-wenkai-tc-regular {
+    font-family: "LXGW WenKai TC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lxgw-wenkai-tc-bold {
+    font-family: "LXGW WenKai TC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: "LXGW WenKai TC", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EBE0D4;
+    color: #60665A;
+}
+
+.container {
+    margin: 0 20px;
+    min-height: calc(100% - 80px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a95b46;
+    /* #EBE0D4 */
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.7);
+    /* border-bottom: 1px solid gray; */
+}
+
+/* 導覽列 */
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+nav {
+    display: flex;
+    /* border: solid black; */
+    align-items: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    /* border: solid black; */
+}
+
+
+
+/* 下拉導覽欄 */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 115x;
+    overflow: hidden;
+}
+
+li {
+    text-align: center;
+    float: left;
+}
+
+li a,
+.custom-dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.custom-dropdown:hover .custom-dropbtn {
+    background-color: rgba(211, 123, 80, 0.8);
+}
+
+li.custom-dropdown {
+    display: inline-block;
+}
+
+.custom-dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px 0;
+    border-radius: 5px;
+    /* margin-top: 17px; */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.custom-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.custom-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.custom-dropdown:hover .custom-dropdown-content {
+    display: block;
+}
+
+
+/* 側邊導覽欄 */
+.hamburger {
+    font-size: 20px;
+    cursor: pointer
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(236, 187, 146, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: rgba(241, 241, 241, 0.6);
+    /* color: #f1f1f1; */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* 側邊導覽欄下拉展開 */
+.sidenav .side-cus-dropdown {
+    position: relative;
+}
+
+.sidenav .side-cus-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #859272;
+    min-width: 250px;
+    z-index: 1;
+}
+
+.sidenav .side-cus-dropdown-content a {
+    padding: 8px 0px 8px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(83, 82, 82);
+    display: block;
+}
+
+.sidenav .side-cus-dropdown-content a:hover {
+    background-color: rgba(241, 241, 241, 0.6);
+    color: rgb(83, 82, 82);
+}
+
+.sidenav .side-cus-dropdown:hover .side-cus-dropdown-content {
+    display: block;
+}
+
+
+/* 關於吉他 */
+/* .banner {
+    background-image: url('./img/banner.jpg');
+    background-color: #60665A;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+} */
+
+.carousel-caption {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(247, 239, 229,0.8); */
+    /* border-radius: 20px; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* #imagesize {
+    width: 100%;
+    height: 400px;
+} */
+
+
+.content {
+    display: flex;
+}
+
+footer {
+    height: 80px;
+    /*設定footer本身高度*/
+    background-color: #859272;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+}
+
+/* 吉他種類 */
+.card-hh{
+    transition: 1s;
+}
+.card-hh:hover{
+    transform: scale(1.1)
+}
+
+/* 吉他保養 */
+#guitarcare {
+    position: relative;
+}
+
+.posgroup {
+    position: absolute;
+}
+
+#guitarcareimg1 {
+    background-color: #859272;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+#guitarcareimg2 {
+    background-color: lightcoral;
+    top: 40px;
+    left: 150px;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* 吉他小教室 */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #F7EFE5;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #859272;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* 願望清單 */
+.question-form {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* 電吉他 */
+.Elecflex {
+    display: flex;
+}
+
+/* FAQ */
+.accordion-button {
+    background-color: #F7EFE5;
+    /* 按鈕背景顏色 */
+    color: black;
+    /* 按鈕文字顏色 */
+}
+
+.accordion-body {
+    background-color: #7192a1;
+    /* 摺疊內容背景顏色 */
+    color: black;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* screen < 768px */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* screen < 375px */
+@media (max-width: 375px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* screen > 768px */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap');

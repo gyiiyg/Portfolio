@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉他按法</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/bootstrap.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a class="logo" href="./Home.html">吉他刷刷</a>
+        <nav>
+            <a href="./About.html">關於吉他</a>
+            <ul>
+                <li class="custom-dropdown">
+                    <a href="javascript:void(0)" class="custom-dropbtn">吉他種類</a>
+                    <div class="custom-dropdown-content">
+                        <a href="./HawayiGuitar.html">夏威夷吉他</a>
+                        <a href="./SpainGuitar.html">西班牙吉他</a>
+                        <a href="./ElectricGuitar.html">電吉他</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="./Care.html">吉他保養</a>
+            <ul>
+                <li class="custom-dropdown">
+                    <a href="javascript:void(0)" class="custom-dropbtn">吉他小教室</a>
+                    <div class="custom-dropdown-content">
+                        <a href="./HoldGuitar.html">吉他拿法</a>
+                        <a href="./BrushGuitar.html">吉他刷法</a>
+                        <a href="./PlayGuitar.html">吉他彈法</a>
+                        <a href="./PressGuitar.html">吉他按法</a>
+                        <a href="GuitarChords.html">吉他和弦</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="./FAQ.html">常見問題</a>
+        </nav>
+
+        <!-- sidenav -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./About.html">關於吉他</a>
+            <div class="side-cus-dropdown">
+                <a href="javascript:void(0)" class="side-cus-dropbtn">吉他種類</a>
+                <div class="side-cus-dropdown-content">
+                    <a href="./HawayiGuitar.html">夏威夷吉他</a>
+                    <a href="./SpainGuitar.html">西班牙吉他</a>
+                    <a href="./ElectricGuitar.html">電吉他</a>
+                </div>
+            </div>
+            <a href="./Care.html">吉他保養</a>
+            <div class="side-cus-dropdown">
+                <a href="javascript:void(0)" class="side-cus-dropbtn">吉他小教室</a>
+                <div class="side-cus-dropdown-content">
+                    <a href="./HoldGuitar.html">吉他拿法</a>
+                    <a href="./BrushGuitar.html">吉他刷法</a>
+                    <a href="./PlayGuitar.html">吉他彈法</a>
+                    <a href="./PressGuitar.html">吉他按法</a>
+                    <a href="./GuitarChords.html">吉他和弦</a>
+                </div>
+            </div>
+            <a href="./FAQ.html">常見問題</a>
+        </div>
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+    </header>
+
+    <!-- main -->
+    <main class="container-xxl mt-5 pt-5">
+
+        <div class="container-xxl" style="justify-content: center;">
+            <h2 style="text-align: center;background-color: #859272;color: white; border-radius: 5px;">吉他按法</h2>
+            <img src="./img/playguitar2.jpg" width="100%" height="300" class="mt-3" style="object-fit: contain;">
+            <div class="container-xxl">
+                <p class="mt-3">
+                    <i>吉他按法</i> 與和弦有關，和弦可說是歌曲的核心架構，
+                    和弦的排列稱為和弦進行，它們塑造了歌曲基本氛圍，搭配不同的刷法傳遞出多樣的情緒起伏，
+                    再經過旋律線與節奏的設計，創造出一首又一首動人心弦的經典歌曲。
+                </p>
+                <p style="font-weight: bold; font-size: larger; border-left: 8px solid #D37B50;" class="ps-3">按弦注意事項</p>
+                <p>
+                    學習和弦最好的方式就是直接套用進歌曲，我們可以先從使用三個和弦且速度慢的歌曲開始，
+                    然後等到稍微習慣之後，再嘗試四個和弦的歌曲喔。以下是練習和弦時的注意事項：<br>
+
+                    - 按的位置要盡量接近下方琴桁（Fret）。<br>
+                    - 使用指「尖」按弦，並且關節呈彎曲狀態，而大拇指保持放鬆。<br>
+                    - 因為尚無力氣的關係，一開始按弦通常需要用較多力氣才可把弦按好。<br>
+                    - 確保沒有悶住／碰觸鄰弦，每條該發出聲音的弦都有正常運作。<br>
+                    - 每天花點時間練習和弦之間的轉換過程，進步速度會很快。
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>聯絡我們</div>
+        <div>版權所有 &copy; 2025 吉他世界</div>
+    </footer>
+
+
+    <script>
+        // navigation
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        document.querySelectorAll('.side-cus-dropbtn').forEach(button => {
+            button.addEventListener('click', function () {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

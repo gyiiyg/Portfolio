@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>關於吉他</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./js/bootstrap.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a class="logo" href="./Home.html">吉他刷刷</a>
+    <nav>
+      <a href="./About.html">關於吉他</a>
+      <ul>
+        <li class="custom-dropdown">
+          <a href="javascript:void(0)" class="custom-dropbtn">吉他種類</a>
+          <div class="custom-dropdown-content">
+            <a href="./HawayiGuitar.html">夏威夷吉他</a>
+            <a href="./SpainGuitar.html">西班牙吉他</a>
+            <a href="./ElectricGuitar.html">電吉他</a>
+          </div>
+        </li>
+      </ul>
+      <a href="./Care.html">吉他保養</a>
+      <ul>
+        <li class="custom-dropdown">
+          <a href="javascript:void(0)" class="custom-dropbtn">吉他小教室</a>
+          <div class="custom-dropdown-content">
+            <a href="./HoldGuitar.html">吉他拿法</a>
+            <a href="./BrushGuitar.html">吉他刷法</a>
+            <a href="./PlayGuitar.html">吉他彈法</a>
+            <a href="./PressGuitar.html">吉他按法</a>
+            <a href="GuitarChords.html">吉他和弦</a>
+          </div>
+        </li>
+      </ul>
+      <a href="./FAQ.html">常見問題</a>
+    </nav>
+
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./About.html">關於吉他</a>
+      <div class="side-cus-dropdown">
+        <a href="javascript:void(0)" class="side-cus-dropbtn">吉他種類</a>
+        <div class="side-cus-dropdown-content">
+          <a href="./HawayiGuitar.html">夏威夷吉他</a>
+          <a href="./SpainGuitar.html">西班牙吉他</a>
+          <a href="./ElectricGuitar.html">電吉他</a>
+        </div>
+      </div>
+      <a href="./Care.html">吉他保養</a>
+      <div class="side-cus-dropdown">
+        <a href="javascript:void(0)" class="side-cus-dropbtn">吉他小教室</a>
+        <div class="side-cus-dropdown-content">
+          <a href="./HoldGuitar.html">吉他拿法</a>
+          <a href="./BrushGuitar.html">吉他刷法</a>
+          <a href="./PlayGuitar.html">吉他彈法</a>
+          <a href="./PressGuitar.html">吉他按法</a>
+          <a href="./GuitarChords.html">吉他和弦</a>
+        </div>
+      </div>
+      <a href="./FAQ.html">常見問題</a>
+    </div>
+    <span class="hamburger" onclick="openNav()">&#9776;</span>
+  </header>
+
+  <!-- main -->
+  <main class="container-xxl mt-5 pt-5">
+
+    <div class="container-xxl" style="justify-content: center;">
+      <h2 style="text-align: center;background-color: #859272;color: white; border-radius: 5px;">關於吉他</h2>
+      <img src="./img/guitars.jpg" width="100%" height="300" class="mt-3" style="object-fit: contain;">
+      <div class="container-xxl">
+        <p class="mt-3">
+          <i>吉他</i>
+          （英語：guitar，港澳稱結他，又稱「六弦琴」），是一種彈撥樂器。通常有六條弦，形狀與提琴相似。吉他在流行音樂、搖滾音樂、藍調、民歌、佛朗明哥中，常被視為主要樂器；在古典音樂的領域裡，吉他常以獨奏或二重奏的型式演出；在室內樂和管弦樂中，吉他亦扮演著相當程度的陪襯角色。
+        </p>
+        <p>
+          🎸<b>夏威夷吉他</b> ：包括夏威夷吉他和電吉他，定弦和姿勢彈奏方法與西班牙吉他完全不同，以彈奏旋律為主，聲音優美。
+        </p>
+        <p>
+          🎸<b>西班牙吉他</b> ，分為三類：<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<b>1.</b><b>古典吉他</b><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<b>2.</b><b>民謠吉他</b><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<b>3.</b><b>佛朗明哥吉他</b>
+        </p>
+        <p>
+          🎸<b>電吉他</b> ：第一把電吉他是在木吉他的基礎上加裝拾音器連接揚聲器來擴大音量，後來大多都採用實心吉他（爵士樂還是有繼續使用空心電吉他），是現代流行音樂和搖滾樂中重要的伴奏和獨奏樂器。
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>聯絡我們</div>
+    <div>版權所有 &copy; 2025 吉他世界</div>
+  </footer>
+
+
+  <script>
+    // navigation
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    document.querySelectorAll('.side-cus-dropbtn').forEach(button => {
+      button.addEventListener('click', function () {
+        this.nextElementSibling.classList.toggle('show');
+      });
+    });
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉他拿法</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/bootstrap.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a class="logo" href="./Home.html">吉他刷刷</a>
+        <nav>
+            <a href="./About.html">關於吉他</a>
+            <ul>
+                <li class="custom-dropdown">
+                    <a href="javascript:void(0)" class="custom-dropbtn">吉他種類</a>
+                    <div class="custom-dropdown-content">
+                        <a href="./HawayiGuitar.html">夏威夷吉他</a>
+                        <a href="./SpainGuitar.html">西班牙吉他</a>
+                        <a href="./ElectricGuitar.html">電吉他</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="./Care.html">吉他保養</a>
+            <ul>
+                <li class="custom-dropdown">
+                    <a href="javascript:void(0)" class="custom-dropbtn">吉他小教室</a>
+                    <div class="custom-dropdown-content">
+                        <a href="./HoldGuitar.html">吉他拿法</a>
+                        <a href="./BrushGuitar.html">吉他刷法</a>
+                        <a href="./PlayGuitar.html">吉他彈法</a>
+                        <a href="./PressGuitar.html">吉他按法</a>
+                        <a href="GuitarChords.html">吉他和弦</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="./FAQ.html">常見問題</a>
+        </nav>
+
+        <!-- sidenav -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./About.html">關於吉他</a>
+            <div class="side-cus-dropdown">
+                <a href="javascript:void(0)" class="side-cus-dropbtn">吉他種類</a>
+                <div class="side-cus-dropdown-content">
+                    <a href="./HawayiGuitar.html">夏威夷吉他</a>
+                    <a href="./SpainGuitar.html">西班牙吉他</a>
+                    <a href="./ElectricGuitar.html">電吉他</a>
+                </div>
+            </div>
+            <a href="./Care.html">吉他保養</a>
+            <div class="side-cus-dropdown">
+                <a href="javascript:void(0)" class="side-cus-dropbtn">吉他小教室</a>
+                <div class="side-cus-dropdown-content">
+                    <a href="./HoldGuitar.html">吉他拿法</a>
+                    <a href="./BrushGuitar.html">吉他刷法</a>
+                    <a href="./PlayGuitar.html">吉他彈法</a>
+                    <a href="./PressGuitar.html">吉他按法</a>
+                    <a href="./GuitarChords.html">吉他和弦</a>
+                </div>
+            </div>
+            <a href="./FAQ.html">常見問題</a>
+        </div>
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+    </header>
+
+    <!-- main -->
+    <main class="container-xxl mt-5 pt-5">
+
+        <div class="container-xxl" style="justify-content: center;">
+            <h2 style="text-align: center;background-color: #859272;color: white; border-radius: 5px;">吉他拿法</h2>
+            <img src="./img/playguitar.jpg" width="100%" height="300" class="mt-3" style="object-fit: contain;">
+            <div class="container-xxl">
+                <p class="mt-3">
+                    在剛踏入音樂教室開始學吉他時，最重要的一件事就是要確立持琴姿勢，修正好持琴姿勢，吉他彈奏的功力也會更上一層樓喔！
+
+                    你可能會想我真的需要學習如何握好吉他嗎？答案是絕對需要！
+
+                    在彈奏吉他的早期階段就調整好姿勢、握法和手部位置，讓我們從一開始就調整好，以後就不需要花時間改掉早期學習錯誤的不良技術習慣。
+                </p>
+                <p style="font-weight: bold; font-size: larger; border-left: 8px solid #D37B50;" class="ps-3">坐姿</p>
+                <p>
+                    如果你是右撇子，吉他就放在右腿上，找一把椅子坐下，把雙腳平放在地板上，
+                    無論是坐著還是站著，保持背部挺直、肩膀水平，這樣你的脊椎會非常感謝你。
+                </p>
+                <p style="font-weight: bold; font-size: larger; border-left: 8px solid #D37B50;" class="ps-3">手指按壓位置</p>
+                <p>
+                    使用指尖按壓和弦，來確保按壓在準確的位置，
+                    對於大多數演奏環境，你的拇指應位於琴頸後部的中間，垂直指向或略微指向琴頭。
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>聯絡我們</div>
+        <div>版權所有 &copy; 2025 吉他世界</div>
+    </footer>
+
+
+    <script>
+        // navigation
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        document.querySelectorAll('.side-cus-dropbtn').forEach(button => {
+            button.addEventListener('click', function () {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
